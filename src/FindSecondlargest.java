@@ -3,8 +3,6 @@
 //Output: 34Key Logic: largest සහ
 //secondLargest ලෙස variables 2ක් තබාගෙන එක ලූප් එකකින් update කිරීම.
 //
-
-
 import java.util.Arrays;
 
 public class FindSecondlargest {
