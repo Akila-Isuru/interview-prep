@@ -1,3 +1,4 @@
+import java.util.Arrays;
 import java.util.HashSet;
 import java.util.Set;
 
@@ -12,12 +13,18 @@ public class RemoveduplicatesFromSortedArray {
     public static void main(String[] args) {
         int[] arr = {1, 1, 2, 2, 3, 4, 4};
 
-        Set<Integer> unique_numbers = new HashSet<>();
+        int write = arr[0];
+        int read =arr[1];
 
-        for (int i : arr) {
-            unique_numbers.add(i);
+        while(write<arr.length){
+            if(write!=read){
+                arr[write]=read;
+                write++;
+            }
+
+
         }
-        System.out.println(unique_numbers);
+        System.out.println(Arrays.toString(arr));
 
     }
 }

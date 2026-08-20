@@ -10,14 +10,26 @@ public class TwoSum {
 
     private static String findTwoSumPairs(int[] numbers, int target) {
         for (int i = 0; i < numbers.length; i++) {
-            for (int j = i + 1; j < numbers.length; j++) {
+            for (int j = i+1; j < numbers.length; j++) {
                 if (numbers[i] + numbers[j] == target) {
-                    return "Pair found at indices: " + i + " and " + j + " (Values: " + numbers[i] + " and " + numbers[j] + ")";
+                    return "Yes";
                 }
             }
         }
-        return "No pair found";
+        return "No";
     }
+
+
+//    private static String findTwoSumPairs(int[] numbers, int target) {
+//        for (int i = 0; i < numbers.length; i++) {
+//            for (int j = i + 1; j < numbers.length; j++) {
+//                if (numbers[i] + numbers[j] == target) {
+//                    return "Pair found at indices: " + i + " and " + j + " (Values: " + numbers[i] + " and " + numbers[j] + ")";
+//                }
+//            }
+//        }
+//        return "No pair found";
+//    }
 
 }
 

@@ -7,15 +7,26 @@ public class FindMissingNumber {
         int [] arr={1, 2, 4, 5, 6};
         int n = arr.length+1;
 
-        int expected_sum = n*(n+1)/2;
+        int expectedSum = n*(n+1)/2;
 
         int actualSum =0;
+
         for(int num:arr){
             actualSum+=num;
         }
+        int missing_number = expectedSum-actualSum;
 
-        int mising_number = expected_sum-actualSum;
-        System.out.println("mising number = "+mising_number);
+        System.out.println("Missing number: "+missing_number);
+
+//        int expected_sum = n*(n+1)/2;
+//
+//        int actualSum =0;
+//        for(int num:arr){
+//            actualSum+=num;
+//        }
+//
+//        int mising_number = expected_sum-actualSum;
+//        System.out.println("mising number = "+mising_number);
 
 
     }
