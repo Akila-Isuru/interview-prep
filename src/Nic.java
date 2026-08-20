@@ -23,8 +23,6 @@ public class Nic {
             } else {
                 System.out.println("Gender is male");
             }
-
-            78  i`
         } else {
             System.out.println("Invalid NIC");
         }
