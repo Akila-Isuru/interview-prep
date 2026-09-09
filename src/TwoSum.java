@@ -9,15 +9,34 @@ public class TwoSum {
     }
 
     private static String findTwoSumPairs(int[] numbers, int target) {
-        for (int i = 0; i < numbers.length; i++) {
-            for (int j = i+1; j < numbers.length; j++) {
-                if (numbers[i] + numbers[j] == target) {
-                    return "Yes";
-                }
+
+
+        int left = 0;
+        int right = numbers.length - 1;
+
+        while(left < right){
+            int sum = numbers[left] + numbers[right];
+            if(sum == target){
+                System.out.println(numbers[left]+" "+numbers[right]);
+                break;
+            } else if (sum>target) {
+                right--;
+
+            }else  {
+                left++;
             }
         }
-        return "No";
+        return null;
     }
+//        for (int i = 0; i < numbers.length; i++) {
+//            for (int j = i+1; j < numbers.length; j++) {
+//                if (numbers[i] + numbers[j] == target) {
+//                    return "Yes";
+//                }
+//            }
+//        }
+//        return "No";
+//    }
 
 
 //    private static String findTwoSumPairs(int[] numbers, int target) {
@@ -30,6 +49,7 @@ public class TwoSum {
 //        }
 //        return "No pair found";
 //    }
+
 
 }
 

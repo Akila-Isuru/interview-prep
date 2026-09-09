@@ -15,5 +15,18 @@ public class FindAverage {
         average = total / numbers.length;
         System.out.println(average);
     }
+//public static void main(String[] args) {
+//    int[] numbers = {10, 25, 30, 45, 52};
+//    double total = 0;
+//    int count = 0;
+//    double average = 0;
+//
+//    for(int i = 0; i < numbers.length; i++) {
+//        total += numbers[i];
+//        count++;
+//    }
+//    average = total / count;
+//    System.out.println(average);
+//}
 
 }
