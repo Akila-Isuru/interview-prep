@@ -9,15 +9,25 @@ public class FindMaximumandMinimum {
         int max =arr[0];
         int min = arr[0];
 
-        for(int i =0;i<arr.length;i++){
-            if(arr[i]>max){
-                max= arr[i];
-            }else if(arr[i]<min){
-                min= arr[i];
+//        for(int i =0;i<arr.length;i++){
+//            if(arr[i]>max){
+//                max= arr[i];
+//            }else if(arr[i]<min){
+//                min= arr[i];
+//            }
+//        }
+//        System.out.println("Maximum is "+max);
+//        System.out.println("Minimum is "+min);
+
+        for(int num:arr){
+            if(num>max){
+                max = num;
+            }else if(num<min){
+                min = num;
             }
         }
-        System.out.println("Maximum is "+max);
-        System.out.println("Minimum is "+min);
+        System.out.println("max :"+max);
+        System.out.println("min :"+min);
 
     }
 }
