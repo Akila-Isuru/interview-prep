@@ -19,6 +19,7 @@ public class FindtheSecondLargest {
             }
         }
         System.out.println("Second Largest : "+secondLargest);
+        System.out.println(Integer.MIN_VALUE);
 
 
     }
