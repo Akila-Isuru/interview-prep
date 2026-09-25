@@ -2,7 +2,7 @@
 //Goal: ළඟ ළඟ තියෙන අංක 3 ක (k = 3) ලබාගත හැකි විශාලම එකතුව (Maximum Sum) සෙවීම.
 //        Output: 9 (මොකද {5, 1, 3} කියන 3 දෙනාගේ එකතුව 9 වේ).
 
-public class MaximumSumSubarrayofSizeK {
+public class MaximumSumSubArrayOfSizeK {
     public static void main(String[] args) {
         int[] arr = {2, 1, 5, 1, 3, 2};
         int k =3;

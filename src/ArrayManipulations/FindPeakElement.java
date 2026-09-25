@@ -21,6 +21,7 @@ public class FindPeakElement {
           }
       }
         System.out.println("Peak Element :"+arr[low]);
+ //meeeka balann tiyenawa
 
 
 

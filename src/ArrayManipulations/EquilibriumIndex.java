@@ -25,18 +25,20 @@ public class EquilibriumIndex {
         int totalSum =0;
         int leftSum=0;
 
-        for(int num :arr){
-            totalSum+=num;
+        for(int num : arr){
+            totalSum += num;
         }
 
-        for(int i =0;i<arr.length;i++){
-            totalSum-=arr[i];
-            if(leftSum==totalSum){
+        for(int i=0;i<arr.length;i++){
+            int rightSum = totalSum - leftSum - arr[i];
+            if(leftSum==rightSum){
                 System.out.println("Equilibrium Index is :"+i);
                 return;
+
             }
             leftSum+=arr[i];
         }
 
+        System.out.println("Not found");
     }
 }

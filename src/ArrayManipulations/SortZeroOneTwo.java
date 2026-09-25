@@ -39,5 +39,6 @@ public class SortZeroOneTwo {
         }
         System.out.println(Arrays.toString(arr));
 
+        //meekat balannn oone
     }
 }

@@ -11,6 +11,9 @@ public class ReverseString {
         String [] str =  word.split("");
         int n = str.length/2;
 
+        int [] arr = new int[10];
+
+
         String temp = "";
 
         for(int i =0;i<n;i++){
