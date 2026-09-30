@@ -22,12 +22,12 @@ public class ThirdLargest {
                 largest = arr[i];
 
                 // 2. first ට වඩා කුඩා, නමුත් second ට වඩා විශාල නම්
-            }else if(arr[i]>secondLargest && secondLargest!= largest){
+            }else if(arr[i]>secondLargest && arr[i]!= largest){
                 thirdLargest= secondLargest;
                 secondLargest = arr[i];
 
                 // 3. second ට වඩා කුඩා, නමුත් third ට වඩා විශාල නම්
-            } else if (arr[i]>thirdLargest && arr[i]!=largest) {
+            } else if (arr[i]>thirdLargest && arr[i]!=secondLargest && arr[i]!=largest) {
                 thirdLargest= arr[i];
 
             }
